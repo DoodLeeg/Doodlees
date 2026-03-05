@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-    public function show()
+    public function show($name)
     {
-        return view('test');
+        return view('test',['name' => $name]);
     }
 }

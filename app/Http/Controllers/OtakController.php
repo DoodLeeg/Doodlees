@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class OtakController extends Controller
 {
-    public function show($Surname, $Name)
+    public function show($Fruit, $Milk)
     {
-        return 'My surname - '.$Surname.' and my name - '.$Name;
+        return view('Makets.NS-1',['Fruit' => $Fruit, 'Milk' => $Milk]);
     }
 }

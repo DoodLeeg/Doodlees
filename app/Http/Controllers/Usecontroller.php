@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 class Usecontroller extends Controller
 {
-    public function show($name, $surname)
+    public function show($name,$surname)
     {
-        return 'Hello my name - '.$name. ' and my surname - '.$surname;
+        return view('NS',['name' => $name, 'surname' => $surname]);
     }
 
 }
