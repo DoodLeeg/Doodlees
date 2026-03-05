@@ -14,4 +14,6 @@ Route::get('/', function () {
 Route::get('/name/all', [UserController::class, 'show']);
 Route::get('user/{name}', [OkakController::class, 'show']);
 Route::get('user/{Surname}/{Name}', [OtakController::class, 'show']);
+Route::get('user/Git',[POSTController::class<'show']);
+
 ?>
