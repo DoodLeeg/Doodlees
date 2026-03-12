@@ -7,6 +7,7 @@ use App\Http\Controllers\Usecontroller;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\Maketscontroller;
 
 Route::get('/', function () {
     return ('!!!');
@@ -24,4 +25,5 @@ Route::get('/git/{Fruit}/{Milk}', [OtakController::class, 'show']);
 
 // Z4
 
+Route::get('/git/{maket}', [Maketscontroller::class, 'show']);
 ?>
