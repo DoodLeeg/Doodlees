@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class Maketscontroller extends Controller
 {
-   public function show($content)
+   public function show()
    {
-    return view('makeBL', ['content' => $content]);
+    return view('Makets.show');
    } 
 }

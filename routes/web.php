@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\Maketscontroller;
 
+
 Route::get('/', function () {
     return ('!!!');
 });
@@ -17,13 +18,17 @@ Route::get('/', function () {
 Route::get('/git/cnt', [PostController::class, 'show']);
 // Z2
 
-Route::get('/git/{surname}/{name}', [Usecontroller::class, 'show']);
+Route::get('/git/cn/{surname}/{name}', [Usecontroller::class, 'show']);
 
 // Z3
 
-Route::get('/git/{Fruit}/{Milk}', [OtakController::class, 'show']);
+Route::get('/git/fv/{Fruit}/{Milk}', [OtakController::class, 'show']);
 
 // Z4
 
-Route::get('/git/{maket}', [Maketscontroller::class, 'show']);
+Route::get('/git/title/slot', [Maketscontroller::class, 'show']);
+
+// Z7 
+
+Route::get('/git/users', [ArticleCotroller::class, 'show']);
 ?>
