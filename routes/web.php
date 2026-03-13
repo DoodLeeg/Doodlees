@@ -30,5 +30,9 @@ Route::get('/git/title/slot', [Maketscontroller::class, 'show']);
 
 // Z7 
 
-Route::get('/git/users', [ArticleCotroller::class, 'show']);
+Route::get('/git/users', [ArticleCotroller::class, 'show'])->name('Users.Names');
+Route::get('/git/surname', [ArticleCotroller::class, 'sur'])->name('Users.Surnames');
+Route::get('/git/ages', [ArticleCotroller::class, 'age'])->name('Users.Ages');
+
+// Z8
 ?>

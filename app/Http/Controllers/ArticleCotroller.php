@@ -10,4 +10,13 @@ class ArticleCotroller extends Controller
     {
         return view('Users.Names');
     }
+    public function sur()
+    {
+        return view('Users.Surnames');
+    }
+    public function age()
+    {
+        return view('Users.Ages');
+    }
+      
 }
