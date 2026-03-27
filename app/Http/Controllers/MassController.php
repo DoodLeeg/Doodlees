@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 class MassController extends Controller
 {
-    public function mass()
+    public function mas()
     {
-        $massiv = [1,2,3,4,5];
-        return view('Mass.mass', compact('massiv'));
+        $mass = [1,2,3,4,5];
+        return view('Mass.mass', ['mass' => $mass]);
     }
 }

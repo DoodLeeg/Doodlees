@@ -1,6 +1,8 @@
 <?php
+use App\Http\Controllers\CityController;
 use App\Http\Controllers\MassController;
 use App\Http\Controllers\RabotController;
+use App\Http\Controllers\STDAController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\ColorController;
 use App\Http\Controllers\InputController;
@@ -37,5 +39,17 @@ Route::get('/git/w/Rabot', [RabotController::class,'Rabot']);
 
 // Z8
 
-Route::get('git/mas/massive', [MassController::class,'mass']);
+Route::get('/git/mas/massive', [MassController::class,'mas']);
+
+// Z9
+
+Route::get('/git/c/city', [CityController::class,'city']);
+
+// Z10
+
+Route::get('/git/s/trd', [STDAController::class, 'std']);
+
+// Z12
+
+
 ?>

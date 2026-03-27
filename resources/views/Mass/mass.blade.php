@@ -1,1 +1,1 @@
-<p {{ count( $mass) }}></p>
+<p>{{ count($mass) }}</p>
