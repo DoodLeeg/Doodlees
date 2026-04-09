@@ -1,1 +1,0 @@
-<a href="Http">{{ $text }}</a>
